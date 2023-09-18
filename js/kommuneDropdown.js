@@ -40,12 +40,11 @@ function fillDropdown(kommuner) {
 
 //Creates an <a> tag for a Kommune
 function createATag(kommune) {
-    if (!kommune.used) {
-        const aTag = document.createElement("a")
-        aTag.textContent = kommune.name
-        aTag.href = kommune.href
-        aTags.appendChild(aTag)
-    }
+    const aTag = document.createElement("a")
+    aTag.textContent = kommune.name
+    aTag.href = kommune.href
+    aTags.appendChild(aTag)
+
 }
 
 //Detect input changes, only shows and creates aTag if the input matches a kommune
