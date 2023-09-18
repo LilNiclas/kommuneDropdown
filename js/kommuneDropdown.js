@@ -50,7 +50,7 @@ function createATag(kommune) {
 
 //Detect input changes, only shows and creates aTag if the input matches a kommune
 searchKommuneInp.addEventListener("input", function () {
-    const inputText = this.value.trim();
+    const inputText = this.value.trim(); //wont detect spaces
     aTags.innerHTML = ""
     if (inputText && kommuneDataMap.has(inputText)) {
         createATag(kommuneDataMap.get(inputText))
